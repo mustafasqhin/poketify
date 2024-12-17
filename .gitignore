@@ -1,0 +1,15 @@
+# Node.js Modülleri
+node_modules/
+
+# CSS ve Map Dosyaları
+*.css
+*.css.map
+
+# Lisans Dosyası
+bundle.js.LICENSE.txt
+
+# Ortam Değişkenleri Dosyası
+.env
+
+# Yükleme Klasörü
+uploads/

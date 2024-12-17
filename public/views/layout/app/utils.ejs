@@ -1,0 +1,85 @@
+<!-- Utilities -->
+
+<!--The dark overlay-->
+<div id="focus_glass"></div>
+
+<!-- Options container for reacts and other functionalities -->
+<div id="messageOptionsContainerWrapper">
+    <div id="optionsContainer">
+        <div class="reactOptionsWrapper" data-expanded="false">
+            <ul id="reactOptions" class="options">
+                <!--Reacts-->
+                <div class="more option" title="Daha fazla tepki" id="showMoreReactBtn"><i class="fa-solid fa-plus"></i></div>
+            </ul>
+        </div>
+        <div class="normalOptionWrapper">
+            <ul id="normalOptions" class="options">
+                <div class="replyOption option"><i class="fa-solid fa-reply"></i> <span>Yanıtla</span></div>
+                <div class="copyOption option" style="display: none;"><i class="fa-solid fa-clone"></i> <span>Kopyala</span></div>
+                <div class="downloadOption option" style="display: none;"><i class="fa-solid fa-download"></i> <span>İndir</span></div>
+                <div class="deleteOption option"><i class="fa-solid fa-trash"></i> <span>Sil</span></div>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--message popup-->
+<div class="scrollPopupWrapper">
+    <div class="newmessagepopup button-animate small btn play-sound">
+        <img src="" alt="Avatar"><div class="msg"></div><div class="downarrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+</div>
+
+<!-- Image Preview -->
+
+<div id="filePreviewContainer">
+    <div id="selectedFiles"></div>
+    <div id="filePreviewOptions">
+        <div class="close button button-animate btn play-sound btn-with-icon">İptal <i class="fa-solid fa-trash default"></i></div>
+        <div id="items-count"></div>
+        <div id="fileSendButton" class="button button-animate btn btn-with-icon">Gönder <i class="fa-solid fa-paper-plane default"></i></div>
+    </div>
+</div>
+
+<!--Image will be viewed here-->
+<div id="lightbox">
+    <div class="tool">
+        <div id="lightboxSaveButton" class="btn"><i class="fa-solid fa-download"></i></div>
+        <div id="lightboxCloseButton" class="btn"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+    <div id="lightboxImage"></div>
+</div>
+
+<!-- Image Drag and drop overlay -->
+
+<div class="fileDropZone">
+    <div class="fileDropZoneContent">
+        <span>Dosyayı buraya bırakın</span>
+    </div>
+</div>
+
+
+<div class="moreReactsContainer" id="moreReactsContainer" data-expanded="false">
+    <div id="expandReactButton"><i class="expandReactsIcon fa-solid fa-chevron-up"></i></div>
+    <div class="moreReacts">
+        <!-- Add more emojis -->
+    </div>
+</div>
+
+<!-- Reacts of all peoples -->
+<div class="reactorContainerWrapper">
+    <div class="reactorContainer">Tepkiler😃<ul></ul></div>
+</div>
+
+<!--Offline Indicator-->
+<div class="offline">
+    <div class="icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+    <div class="text"></div>
+</div>
+
+<svg class='hideSvgSoThatItSupportsFirefox'>
+    <filter id='sharpBlur'>
+      <feGaussianBlur stdDeviation='5'></feGaussianBlur>
+      <feComposite in2='SourceGraphic' operator='in'></feComposite>
+    </filter>
+</svg>

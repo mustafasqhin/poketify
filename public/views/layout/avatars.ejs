@@ -1,0 +1,16 @@
+<div class="avatars">
+    <% for( let i = 0; i < avList.length; i++ ) { %>
+    <div class="avatar">
+        <input type="radio" name="avatar" value="<%=avList[i]%>" id="<%=avList[i]%>">
+        <% if (takenAvlists) { %>
+            <% if (takenAvlists.includes(avList[i])) { %>
+                <label for="<%=avList[i]%>" class="button-animate btn play-sound"><img src="/images/avatars/<%=avList[i]%>(custom).webp" class="taken" alt="<%=avList[i]%>"></label>
+            <% } else { %>
+                <label for="<%=avList[i]%>" class="button-animate btn play-sound"><img src="/images/avatars/<%=avList[i]%>(custom).webp" alt="<%=avList[i]%>"></label>
+            <% } %>
+        <% } else { %>
+            <label for="<%=avList[i]%>" class="button-animate btn play-sound"><img src="/images/avatars/<%=avList[i]%>(custom).webp" alt="<%=avList[i]%>"></label>
+        <% } %>
+    </div>
+    <% } %>
+</div>

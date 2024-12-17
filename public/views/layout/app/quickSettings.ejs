@@ -1,0 +1,76 @@
+<div class="quickSettingPanel" id="quickSettingPanel">
+    <div class="utils">
+        <div class="title">
+            Ayarlar <i class="fa-solid fa-gear"></i> <span class="shortcut">[Alt+s]</span>
+        </div>
+        <div class="subsettingsContainer">
+            <div class="subsettings">
+                <div class="subtitle">Sesler <i class="fa-solid fa-volume-high"></i></div>
+                <!-- Enable/disable button sounds -->
+                <div class="field-checkers btn play-sound">
+                    <input type="checkbox" id="buttonSound">
+                    <label for="buttonSound">
+                        <div class="textContainer">
+                            Dokunma sesleri
+                        </div>
+                        <span class="toggleButton"></span>
+                    </label>
+                </div>
+                <!-- Enable/disable message sounds -->
+                <div class="field-checkers btn play-sound">
+                    <input type="checkbox" id="messageSound">
+                    <label for="messageSound">
+                        <div class="textContainer">
+                            Mesaj sesleri
+                        </div>
+                        <span class="toggleButton"></span>
+                    </label>
+                </div>
+            </div>
+    
+            <div class="subsettings">
+                <div class="subtitle">Klavye <i class="fa-regular fa-keyboard"></i></div>
+                <div class="field-checkers keyboardMode btn play-sound">
+                    <input type="radio" name="sendMethod" id="Ctrl+Enter" value="Ctrl+Enter">
+                    <label for="ctrl">
+                        <div class="textContainer">
+                    Satır eklemek için Enter'a basın
+                            <div class="moreInfo">Göndermek için Ctrl+Enter kullan</div>
+                        </div>
+                        <span class="toggleButton"></span>
+                    </label>
+                </div>
+    
+                <div class="field-checkers keyboardMode btn play-sound">
+                    <input type="radio" name="sendMethod" id="Enter" value="Enter">
+                    <label for="nonctrl">
+                        <div class="textContainer">
+                            Göndermek için Enter'ı kullanın
+                            <div class="moreInfo">Yeni satırlar eklemek için Shift+Enter</div>
+                        </div>
+                        <span class="toggleButton"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!--Quick emoji-->
+            <div class="subsettings">
+                <div class="subtitle">Hızlı emoji <i class="fa-regular fa-smile"></i></div>
+                <div class="field-checkers btn play-sound">
+                    <input type="checkbox" id="quickEmoji" checked>
+                    <label for="quickEmoji">
+                        <div class="textContainer">
+                            Hızlı emojiyi etkinleştir
+                        </div>
+                        <span class="toggleButton"></span>
+                    </label>
+                </div>
+                <div class="field-checkers btn play-sound">
+                    <button class="hyper" id="chooseQuickEmojiButton">Emojiyi Değiştir <span class="quickEmojiIcon"></span></button>
+                </div>
+            </div>
+
+            <div id="themeButton" class="button btn play-sound" title="Temaları seçin [Alt+t]"><i class="fa-solid fa-palette"></i><span>Tema</span><i class="fa-solid fa-brush"></i></div>
+        </div>
+    </div>
+</div>

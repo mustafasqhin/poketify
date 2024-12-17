@@ -1,0 +1,52 @@
+{
+  "name": "poketify",
+  "version": "5.1.1",
+  "description": "Gerçek zamanlı mesajlaşma uygulaması",
+  "main": "server/server.js",
+  "type": "module",
+  "scripts": {
+    "build": "webpack",
+    "start": "node server/server.js",
+    "dev": "nodemon --config src/config/nodemon.json server/server.js",
+    "test": "jest",
+    "test-watch": "nodemon --exec 'npm test'"
+  },
+  "jest": {
+    "testMatch": [
+      "**/*.test.js"
+    ]
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "author": "Mustafa Sahin",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.5",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.17.3",
+    "express-rate-limit": "^6.7.1",
+    "socket.io": "^4.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "@types/compression": "^1.7.2",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/express-rate-limit": "^6.0.0",
+    "@types/express-useragent": "^1.0.2",
+    "babel-jest": "^29.5.0",
+    "eslint": "^8.28.0",
+    "esm": "^3.2.25",
+    "jest": "^28.1.3",
+    "jsdom": "^21.1.1",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.76.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

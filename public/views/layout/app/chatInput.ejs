@@ -1,0 +1,25 @@
+<div class="chatInput">
+    <div class="button-animate small btn play-sound inputBtn hoverBtn" id="stickerBtn" title="Çıkartmaları seçin [Alt+i]"><i class="fa-solid fa-face-laugh-wink"></i></div>
+    <!-- Text input -->
+    <div class="attachments button-animate small btn play-sound inputBtn hoverBtn" id="attachment" title="Ekleri gönder [Alt+a]"><i class="fa-solid fa-paperclip"></i></div>
+    <div class="inputField">
+        <div id="textbox" contenteditable="true" class="select" data-placeholder="Mesaj..." tabindex="-1"></div>
+        <!-- Microphone -->
+        <div class="voiceRecorder" id="recorderOverlay" data-recordingstate="false">
+            <div class="recordBtn btn button-animate small btn hoverBtn" id="recordVoiceButton" data-playstate="" title="Ses kayıt [Alt+r]">
+                <i class="fa-solid fa-microphone" id="micIcon"></i>
+            </div>
+            <div class="recording">
+                <span class="recordingText"><i class="fa-solid fa-circle recordIcon"></i></span>
+                <span id="recordingTime" class="recordingTime">00:00</span>
+            </div>
+            <div class="cancelBtn btn button-animate btn small play-sound hoverBtn" id="cancelVoiceRecordButton">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div id="audiovisualizer"></div>
+        </div>
+    </div>
+      
+    <!-- Send Button-->
+    <button id="send" class=" inputBtn button-animate btn small hoverBtn" title="Ctrl+Enter" tabindex="-1"></button>
+</div>
