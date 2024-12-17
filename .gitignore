@@ -13,3 +13,5 @@ bundle.js.LICENSE.txt
 
 # Yükleme Klasörü
 uploads/
+
+.vercel
