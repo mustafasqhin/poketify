@@ -54,16 +54,16 @@ export function getTypingString(userTypingMap){
 				string = array[0];
 			}
 			else if (array.length == 2){
-				string = `${array[0]} and ${array[1]}`;
+				string = `${array[0]} ve ${array[1]}`;
 			}
 			else if (array.length ==  3){
-				string = `${array[0]}, ${array[1]} and ${array[2]}`;
+				string = `${array[0]}, ${array[1]} ve ${array[2]}`;
 			}
 			else{
-				string = `${array[0]}, ${array[1]}, ${array[2]} and ${array.length - 3} other${array.length - 3 > 1 ? 's' : ''}`;
+				string = `${array[0]}, ${array[1]}, ${array[2]} ve ${array.length - 3} other${array.length - 3 > 1 ? 's' : ''}`;
 			}
 		}
-		string += `${array.length > 1 ? ' are ': ' yazıyor'}`;
+		string += `${array.length > 1 ? ' yazıyor ': ' yazıyor'}`;
 		return string;
 	}else{
 		return '';

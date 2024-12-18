@@ -3768,7 +3768,7 @@ function sendFileStoreRequest(type = null) {
 						else {
 							//(this.response);
 							showPopupMessage(this.response);
-							elem.querySelector('.progress').textContent = 'Upload failed';
+							elem.querySelector('.progress').textContent = 'yükleme hatası';
 							fileSocket.emit('fileUploadError', myKey, id);
 						}
 					}
