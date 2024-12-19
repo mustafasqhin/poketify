@@ -1059,7 +1059,7 @@ export function deleteMessage(messageId, user) {
 				attr: {
 					class: 'data text-content',
 				},
-				text: 'Deleted message',
+				text: 'Mesaj silindi',
 			}
 		});
 
@@ -2711,7 +2711,7 @@ messages.addEventListener('click', (evt) => {
 				reactsMap.forEach((react, uid) => {
 					const avatar = userInfoMap.get(uid).avatar;
 					let name = userInfoMap.get(uid).username;
-					name = name == myName ? 'You' : name;
+					name = name == myName ? 'Siz' : name;
 
 					const listItem = fragmentBuilder({
 						tag: 'li',
