@@ -16,9 +16,7 @@
       "**/*.test.js"
     ]
   },
-  "engines": {
-    "node": "20.x"
-  },
+
   "author": "Mustafa Sahin",
   "license": "ISC",
   "dependencies": {
