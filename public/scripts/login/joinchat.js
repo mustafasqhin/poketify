@@ -206,8 +206,8 @@ socket.on('disconnect', () => {
 	//countdown from 5 to 0
 	let i = 0;
 	setInterval(() => {
-		errlog('keyErr', `yeniden yükleniyor: ${5 - i} ${ i != 4 ? 'seconds' : 'second' } <i class="fa-solid fa-triangle-exclamation"></i>`);
-		errlog('usernameErr', `yeniden yükleniyor: ${5 - i} ${ i != 4 ? 'seconds' : 'second' } <i class="fa-solid fa-triangle-exclamation"></i>`);
+		errlog('keyErr', `yeniden yükleniyor: ${5 - i} ${ i != 4 ? 'saniye' : 'saniye' } <i class="fa-solid fa-triangle-exclamation"></i>`);
+		errlog('usernameErr', `yeniden yükleniyor: ${5 - i} ${ i != 4 ? 'saniye' : 'saniye' } <i class="fa-solid fa-triangle-exclamation"></i>`);
 		i++;
 		if (i == 5){
 			location.reload();
