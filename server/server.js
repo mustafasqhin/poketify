@@ -56,7 +56,7 @@ app.get('/', (req, res) => {
     //never expire cookie
     res.cookie('theme', theme, { maxAge: 2147483647, httpOnly: true });
     // Render the home page
-    res.render('home/home', { title: 'Get Started', hash: nonce, version: `v.${version}`, icon: Icon, color: color, featureItems: featureItemsData });
+    res.render('home/home', { title: 'Başlayın', hash: nonce, version: `v.${version}`, icon: Icon, color: color, featureItems: featureItemsData });
 });
 app.get('/create', (req, res) => {
     const nonce = crypto.randomBytes(16).toString('hex');
